@@ -115,9 +115,7 @@ export default function Header() {
                                         />
                                     </div>
                                     <div>
-                                        <Button fullWidth variant="outlined" type="submit">
-                                            SEND
-                                        </Button>
+                                        <Button fullWidth className="Button" variant="contained">BOOK</Button>
                                     </div>
                                     {/* <div>{successMessage && <p>{successMessage}</p>}</div> */}
                                 </div>
