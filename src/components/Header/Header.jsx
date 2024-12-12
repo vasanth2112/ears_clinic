@@ -37,12 +37,12 @@ export default function Header() {
             loading.destroy();
         };
     }, []);
-    return (
+    return (<>
         <div className='header'>
             {!isVideoLoaded && (
                 <div ref={loaderAnimation} className="loader"></div> // Replace with your loader design
             )}
-            {isVideoLoaded && (<>
+            {isVideoLoaded && (
                 <div className="navbar">
                     <div className="nav-bar">
                         <a href="#home" style={{ color: "#ffffff99" }}>Home</a>
@@ -53,12 +53,19 @@ export default function Header() {
                         <a href="#contact">Contact</a>
                     </div>
                 </div>
-            </>)};
+            )}
             <div className='header_flex'>
                 <div className='header_titles'>
                     <div className='header_titles_flex'>
                         <div><img className='logo_img' src='./logo.png'></img></div>
                         <div className='hidden'> <img className='text_img' src='./Header/title.png'></img></div>
+                    </div>
+                    <div className='header_titles_btn'>
+                        <div><p>"Rediscover the joy of sound and speech. At Bliss Tone, we bring clarity to your communication. Experience expert care tailored to your unique needs."</p></div>
+                        <div className='header_titles_flex_buttons'>
+                            <div><Button className="Button" variant="contained">Contact US</Button></div>
+                            <div><Button className="Button_outline" variant="outlined">Know More</Button></div>
+                        </div>
                     </div>
                 </div>
                 <div className='header_video'>
@@ -69,9 +76,9 @@ export default function Header() {
                     <div className='form'>
 
                         <div className="form_container">
-                        <div className="message_header">
-                            <p>Book Oppointment</p>
-                        </div>
+                            <div className="message_header">
+                                <p>Book Oppointment</p>
+                            </div>
                             <form>
                                 <div className="textfield_div">
                                     <div>
@@ -120,5 +127,5 @@ export default function Header() {
                 </div>
             </div>
 
-        </div>);
+        </div></>);
 }

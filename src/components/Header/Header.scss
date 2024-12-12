@@ -16,14 +16,13 @@
     }
 
     .navbar {
+        padding-top: 16px;
         position: absolute;
-        padding-top: 25px;
         width: 100%;
         display: flex;
         justify-content: center;
 
         .nav-bar {
-            position: relative;
             display: flex;
             justify-items: right;
             align-items: center;
@@ -53,7 +52,7 @@
                 left: 50%;
                 z-index: 10;
                 position: absolute;
-                background: #5de1e9;
+                background: #00A2D3;
                 transition: width 0.3s ease 0s, left 0.3s ease 0s;
                 width: 0;
             }
@@ -73,6 +72,8 @@
             background-color: #303130;
             flex-basis: 50%;
             display: flex;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
 
             .header_titles_flex {
@@ -105,6 +106,41 @@
                     }
                 }
             }
+            .header_titles_btn{
+                width: 70%;
+                p{
+                    margin:30px 0px 30px 0px;
+                    color: #ffffff98;
+                    font-family: "Lato", sans-serif;
+                    font-style: italic;
+                    font-size: 20px;
+                    word-spacing: 2px;
+                }
+            .header_titles_flex_buttons{
+                display: flex;
+                gap: 20px;
+                .Button {
+                    height: 50px;
+                    background-color: #00A2D3;
+                  }
+                  .Button:hover{
+                    color: #00A2D3;
+                    border-color: #00A2D3;
+                    background-color:white;
+                  }
+                  
+                  /* Increase the specificity */
+                  .Button_outline {
+                    height: 50px;
+                    color: white;
+                    border-color:#00A2D3 ;
+                  }
+                  .Button_outline:hover{
+                    color: #00A2D3;
+                    border-color:white ;
+                  }
+            }
+        }
         }
 
         .header_video {
@@ -127,7 +163,7 @@
             }
 
             .form {
-
+                width: 60%;
                 .message_header {
                     padding-top: 10px;
                     text-align: center;
@@ -140,8 +176,7 @@
                     }
                 }
                 .form_container{
-                  width: 400px;
-                  margin-bottom: 20px;
+                  width: 100%;
 
                   backdrop-filter: blur(7px) saturate(152%);
                   -webkit-backdrop-filter: blur(7px) saturate(152%);
