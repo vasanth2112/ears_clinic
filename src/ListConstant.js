@@ -30,3 +30,21 @@ export const SERVICES = [
         description: 'Stay powered with our selection of reliable and long-lasting hearing aid batteries. Convenience and quality, always available.'
     }
 ];
+
+export const BRAND_IMAGES = [
+    {
+        img: "./Brand/signia.svg",
+    },
+    {
+        img: "./Brand/phonak.svg",
+    },
+    {
+        img: "./Brand/gn-resound.svg",
+    },
+    {
+        img: "./Brand/widex.svg",
+    },
+    {
+        img: "./Brand/oticon.jpg",
+    },
+];

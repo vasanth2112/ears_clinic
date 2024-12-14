@@ -10,7 +10,7 @@
             gap: 50px;
             display: flex;
             flex-wrap: wrap;
-
+            padding-left: 30px;
 
             .who_we_are {
                 max-width: 650px;
@@ -30,6 +30,7 @@
                     font-weight: 200;
                     font-size: 15px;
                     letter-spacing: 2px;
+                    margin-top: 0px;
                 }
 
                 p {
@@ -37,7 +38,7 @@
                     font-family: "Lato", sans-serif;
                     font-size: 18px;
                     word-spacing: 3px;
-                    line-height: 25px;
+                    line-height: 28px;
 
                     .highlight {
                         font-weight: 800;
@@ -55,104 +56,22 @@
                 animation-timeline: view();
                 animation-range: entry 0% cover 40%;
             }
-            .video{
-                box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-                height: 350px;
-                width: 100%;
-                animation: fadeleft linear;
-                animation-timeline: view();
-                animation-range: entry 0% cover 40%;
-            }
-        }
-    }
 
-    .aboutus_container_commitment {
-        display: flex;
-        justify-content: center;
-
-        .aboutus_container_commitment_flex {
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 100px;
-
-            h2 {
-                text-align: center;
-                margin-top: 80px;
-            }
-
-
-            .commitment_cards {
+            .video_container {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                flex-wrap: wrap;
-                gap: 50px;
+                padding: 30px 0px 30px 50px;
+                background: rgb(0,162,211);
+                background: linear-gradient(135deg, rgba(0,162,211,1) 51%, rgba(255,255,255,0) 51%);
 
-                .card {
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                    width: 350px;
-                    /* Set a fixed width for each card */
-                    height: 450px;
-                    overflow: hidden;
-                    border-radius: 0px 20%;
-
-                    backdrop-filter: blur(0px) saturate(0%);
-                    -webkit-backdrop-filter: blur(0px) saturate(0%);
-                    background-color: rgba(0, 162, 211, 0.06);
-                    border: solid 1px #00a2d387;
-
-                    animation: fadebottom linear;
+                .video {
+                    //  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                    height: 350px;
+                    width: 100%;
+                    animation: fadeleft linear;
                     animation-timeline: view();
                     animation-range: entry 0% cover 40%;
-
-
-                    .card_img {
-                        animation: top 2s 1;
-
-                        img {
-                            border: none;
-                            border-radius: 0px 0px 50% 50%;
-                            width: 100%;
-                            height: 250px;
-                            /* Allocate 60% of card height to the image */
-                            object-fit: cover;
-                            /* Crop the image to fit the area */
-                        }
-                    }
-
-                    @keyframes top {
-                        from {
-                            top: -200px;
-                        }
-
-                        to {
-                            top: 0px;
-                        }
-                    }
-
-                    h3 {
-                        color: #303130e0;
-                        font-family: "Bebas Neue", sans-serif;
-                        font-weight: 400;
-                        margin-bottom: 0px;
-                    }
-
-                    p {
-                        margin-top: 0px;
-                        padding: 20px;
-                        color: #30313079;
-                        font-family: "Lato", sans-serif;
-                        font-weight: 400;
-                        word-spacing: 2px;
-                    }
-                }
-
-                .card:hover {
-                    // box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-                    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
                 }
             }
         }
@@ -180,17 +99,5 @@
     to {
         opacity: 1;
         transform: translateX(0px);
-    }
-}
-
-@keyframes fadebottom {
-    from {
-        opacity: 0;
-        transform: translateY(100px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0px);
     }
 }

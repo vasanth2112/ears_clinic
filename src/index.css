@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-    margin: 60px;
+    margin: 50px;
     /* color: #00A2D3; */
     color: #303130;
     font-family: "Bebas Neue", sans-serif;
@@ -14,7 +14,7 @@ h1 {
 }
 
 h2{
-    color: #00A2D3;
+    color: #303130;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-size: 30px;

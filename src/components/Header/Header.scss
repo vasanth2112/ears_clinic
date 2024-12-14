@@ -78,6 +78,7 @@
     .header_flex {
         display: flex;
         height: 100vh;
+        flex-wrap: wrap;
 
         .header_titles {
             background-color: #303130;
