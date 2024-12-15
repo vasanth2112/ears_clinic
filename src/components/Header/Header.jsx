@@ -105,10 +105,8 @@ export default function Header() {
                                         <TextField
                                             fullWidth
                                             id="outlined-multiline-static"
-                                            label="Message"
+                                            label="Mobile No"
                                             name="message"
-                                            multiline
-                                            rows={6}
                                             value={formData.message}
                                             onChange={handleInputChange}
                                             required
