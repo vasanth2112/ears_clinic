@@ -60,7 +60,7 @@
             justify-content: center;
             align-items: center;
             padding: 30px;
-            gap: 30px;
+            gap: 0px;
             flex-wrap: wrap;
             width: 90%;
 
@@ -70,7 +70,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                width: 30%;
+                width: 450px;
                 gap: 10px;
                 animation: fadeleft linear;
                 animation-timeline: view();
@@ -86,6 +86,7 @@
                     font-style: italic;
                     font-size: 15px;
                     text-align: center;
+                    width: 300px;
                 }
 
                 .social_img {
@@ -103,7 +104,7 @@
             .address_container {
                 display: flex;
                 gap: 30px;
-                width: 30%;
+                width: 450px;
                 animation: faderight linear;
                 animation-timeline: view();
                 animation-range: entry 0% cover 25%;
@@ -134,7 +135,7 @@
 
             .beHappyAnime {
                 height: 300px;
-                width: 30%;
+                width: 450px;
                 animation: fadebottom linear;
                 animation-timeline: view();
                 animation-range: entry 0% cover 25%;
