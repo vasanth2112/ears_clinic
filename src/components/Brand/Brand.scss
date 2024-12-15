@@ -6,9 +6,11 @@
 
     .brand {
         display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 80px;
         background-color: #3031305c;
-        padding: 80px;
+        padding: 180px 80px 180px 80px;
         border-radius: 10px;
         animation: fadebottom linear;
         animation-timeline: view();

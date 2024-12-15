@@ -38,7 +38,7 @@ export default function Header() {
         };
     }, []);
     return (<>
-        <div className='header'>
+        <div id='home' className='header'>
             {!isVideoLoaded && (
                 <div ref={loaderAnimation} className="loader"></div> // Replace with your loader design
             )}
@@ -47,8 +47,8 @@ export default function Header() {
                     <div className="nav-bar">
                         <a href="#home" style={{ color: "#ffffff99" }}>Home</a>
                         <a href="#aboutUs" style={{ color: "#ffffff99" }}>About Us</a>
-                        <a href="#ourTeam" style={{ color: "#ffffff99" }}>Our Team</a>
-                        <a href="#service">Services</a>
+                        <a href="#ourServices" style={{ color: "#ffffff99" }}>Our Services</a>
+                        <a href="#brands">Brands</a>
                         <a href="#gallery">Gallery</a>
                         <a href="#contact">Contact</a>
                     </div>
