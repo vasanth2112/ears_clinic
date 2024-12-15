@@ -1,0 +1,111 @@
+/* Gallery container centered using Flexbox */
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    .gallery-container {
+        display: flex;
+        flex-direction: column;
+        /* Center vertically */
+        width: 90%;
+        margin-top: 0px;
+        /* Center the gallery horizontally */
+        animation: fadebottom linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+}
+
+/* Custom scrollbar styling */
+.box_scroll::-webkit-scrollbar {
+    width: 2px;
+    height: 5px;
+}
+
+.box_scroll::-webkit-scrollbar-thumb {
+    background: #303130;
+    border-radius: 3px;
+}
+
+.box_scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.hoverable img {
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 3s ease;
+    animation: fadeZoom linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+@keyframes fadeZoom {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.hoverable img:hover {
+    transform: scale(1.01);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.imgGallery {
+    width: 400px;
+    /* Default width for larger screens (e.g., desktops) */
+    height: auto;
+}
+
+/* For screens smaller than 600px (typically mobile) */
+@media (max-width: 600px) {
+    .imgGallery {
+        width: 300px;
+        /* Smaller width for mobile devices */
+    }
+}
+
+/* For screens between 601px and 900px (tablet-sized devices) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .imgGallery {
+        width: 400px;
+        /* Smaller width for tablets */
+    }
+}
+
+/* For screens between 901px and 1200px (small desktops and laptops) */
+@media (min-width: 901px) and (max-width: 1200px) {
+    .imgGallery {
+        width: 450px;
+        /* Standard width for laptops or larger tablets */
+    }
+}
+
+/* For screens larger than 1200px (desktops and large displays) */
+@media (min-width: 1200px) {
+    .imgGallery {
+        width: 500px;
+        /* Larger width for large displays */
+    }
+}
+
+@keyframes fadebottom {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
