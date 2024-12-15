@@ -48,3 +48,42 @@ export const BRAND_IMAGES = [
         img: "./Brand/oticon.jpg",
     },
 ];
+
+
+export const GALLERY_IMAGES = [
+    {
+        img: "../public/Gallery/image_out.jpg",
+        title: 'Image 3',
+        rows:1,
+        cols:1,
+    },
+    {
+        img: "../public/Gallery/image_in.jpg",
+        title: 'Image 1',
+        rows:1,
+        cols:1,
+    },
+    {
+        img: "../public/Gallery/image_office2.jpg",
+        title: 'Image 2',
+        cols:2,
+    },
+    {
+        img: "../public/Gallery/image_waiting.jpg",
+        title: 'Image 2',
+        cols:2,
+    },
+    {
+        img: "../public/Gallery/image_out3.jpg",
+        title: 'Image 2',
+        rows:0,
+        cols:1,
+
+    },
+    {
+        img: "../public/Gallery/image_way.jpg",
+        title: 'Image 2',
+        rows:1,
+        cols:1,
+    },
+];
