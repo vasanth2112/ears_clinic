@@ -6,16 +6,24 @@
     padding: 0 50px;
 
     .aboutus_container_flex {
-      gap: 50px;
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
-
+      align-items: center;
+      gap: 50px;
+      
+      @media (max-width: 1200px) {
+        flex-wrap: wrap;
+        // flex: unset;
+      }
       .who_we_are {
+        flex: 1;
         animation: faderight linear;
         animation-timeline: view();
         animation-range: entry 0% cover 40%;
 
+        @media (max-width: 1200px) {
+          flex: unset;
+        }
         h2 {
           text-align: left;
         }
@@ -54,6 +62,7 @@
       }
 
       .video_container {
+        flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -64,6 +73,10 @@
           rgba(0, 162, 211, 1) 51%,
           rgba(255, 255, 255, 0) 51%
         );
+
+        @media (max-width: 1200px) {
+          flex: unset;
+        }
 
         .video {
           //  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;

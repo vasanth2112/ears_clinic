@@ -6,6 +6,7 @@ import loader from "../../../public/loader.json";
 import Lottie from "lottie-web";
 
 export default function Header() {
+  const [isOpen, setOpen] = useState(false);
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -37,6 +38,10 @@ export default function Header() {
       loading.destroy();
     };
   }, []);
+
+  const handleToggle = () => {
+    setOpen(!isOpen);
+  };
   return (
     <>
       <div className="header">
@@ -52,6 +57,33 @@ export default function Header() {
               <a href="#service">Services</a>
               <a href="#gallery">Gallery</a>
               <a href="#contact">Contact</a>
+            </div>
+
+            <button
+              onClick={handleToggle}
+              className={`hamburger-button ${isOpen ? "open" : "close"}`}
+            />
+            <div className={`panel ${isOpen ? "open" : "close"}`}>
+              <ul>
+                <li onClick={handleToggle}>
+                  <a href="#home">Home</a>
+                </li>
+                <li onClick={handleToggle}>
+                  <a href="#aboutUs">About Us</a>
+                </li>
+                <li onClick={handleToggle}>
+                  <a href="#ourTeam">Our Team</a>
+                </li>
+                <li onClick={handleToggle}>
+                  <a href="#gallery">Gallery</a>
+                </li>
+                <li onClick={handleToggle}>
+                  <a href="#service">Services</a>
+                </li>
+                <li onClick={handleToggle}>
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
             </div>
           </div>
         )}

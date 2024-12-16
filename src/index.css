@@ -1,28 +1,32 @@
 body {
-    margin: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 h1 {
-    margin: 50px;
-    /* color: #00A2D3; */
-    color: #303130;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-size: 60px;
-    letter-spacing: 3px;
-    text-align: center;
+  margin: 50px;
+  /* color: #00A2D3; */
+  color: #303130;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: clamp(2.7rem, 4vw, 3.5rem);
+  letter-spacing: 3px;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    margin: 30px 10px;
+  }
 }
 
-h2{
-    color: #303130;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-    letter-spacing: 2px;
+h2 {
+  color: #303130;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 2px;
 }
 
 .letter_color {
-    /* color: #303130; */
-    color: #00A2D3;
+  /* color: #303130; */
+  color: #00a2d3;
 }
