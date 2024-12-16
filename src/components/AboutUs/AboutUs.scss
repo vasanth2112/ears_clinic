@@ -13,7 +13,6 @@
       
       @media (max-width: 1200px) {
         flex-wrap: wrap;
-        // flex: unset;
       }
       .who_we_are {
         flex: 1;
@@ -52,15 +51,6 @@
         }
       }
 
-      img {
-        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-        height: 350px;
-        width: 100%;
-        animation: fadeleft linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
-      }
-
       .video_container {
         flex: 1;
         display: flex;
@@ -79,7 +69,6 @@
         }
 
         .video {
-          //  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
           height: 350px;
           width: 100%;
           animation: fadeleft linear;

@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 export default function Brand() {
   return (
     <>
-      <div className="brand_container">
+      <div id='brands' className="brand_container">
         <h1>
           <span className="letter_color">T</span>rusted{" "}
           <span className="letter_color">B</span>rands{" "}
@@ -14,8 +14,6 @@ export default function Brand() {
           <span className="letter_color">W</span>ith
         </h1>
         <div className="brand">
-          {/* <div className="marquee-container">
-            <div className="marquee"> */}
           <Marquee>
             {BRAND_IMAGES.map((content, index) => (
               <div key={index} className="brand_img">
@@ -23,8 +21,6 @@ export default function Brand() {
               </div>
             ))}
           </Marquee>
-          {/* </div>
-          </div> */}
         </div>
       </div>
     </>

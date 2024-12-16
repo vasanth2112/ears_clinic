@@ -37,57 +37,60 @@ export default function Footer() {
 
         <div className="footer_container">
           <div className="contact_us">
-          <div className="contact_us_flex_buttons">
-            <div>
-              <Button
-                className="Button_WA"
-                variant="contained"
-                startIcon={<WhatsAppIcon />}
-              >
-                WhatsApp
-              </Button>
-            </div>
-            <div>
-              <Button
-                className="Button_CU"
-                variant="contained"
-                startIcon={<CallIcon />}
-              >
-                Call Us
-              </Button>
-            </div>
-            <div>
-              <Button
-                className="Button_MU"
-                variant="contained"
-                startIcon={<MailIcon />}
-              >
-                Mail Us
-              </Button>
-            </div>
-            <div>
-              <Button
-                className="Button_BO"
-                variant="contained"
-                startIcon={<EventAvailableIcon />}
-              >
-                Book Now
-              </Button>
+            <div className="contact_us_flex_buttons">
+              <div>
+                <a href="https://api.whatsapp.com/send?phone=919047770020">
+                  <Button
+                    className="Button_WA"
+                    variant="contained"
+                    startIcon={<WhatsAppIcon />}
+                  >
+                    WhatsApp
+                  </Button>
+                </a>
+              </div>
+              <div>
+                <a href="tel:9943601230">
+                  <Button
+                    className="Button_CU"
+                    variant="contained"
+                    startIcon={<CallIcon />}
+                  >
+                    Call Us
+                  </Button>
+                </a>
+              </div>
+              <div>
+                <a href="mailto:blisstonehearingclinic@gmail.com?subject=Need%20Your%20Help%20">
+                  <Button
+                    className="Button_MU"
+                    variant="contained"
+                    startIcon={<MailIcon />}
+                  >
+                    Mail Us
+                  </Button>
+                </a>
+              </div>
+              <div>
+                <a href="#booknow">
+                  <Button
+                    className="Button_BO"
+                    variant="contained"
+                    startIcon={<EventAvailableIcon />}
+                  >
+                    Book Now
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
-          </div>
-          
           <div className="footer_content">
             <div className="footer_logo_icon">
               <div>
                 <img className="logo_img" src="./logo_full.png"></img>
               </div>
               <div>
-                <p>
-                  {`"We empower you to rediscover the joy of communication through
-                  compassionate care and personalized solutions for hearing and
-                  speech."`}
-                </p>
+                <p>{`"We empower you to rediscover the joy of communication through compassionate care and personalized solutions for hearing and speech."`}</p>
               </div>
               <div className="social_img">
                 <div>
@@ -100,14 +103,16 @@ export default function Footer() {
                   <InstagramIcon className="icon_style" />
                 </div>
                 <div>
-                  <CallIcon className="icon_style" />
+                  <a href="tel:9943601230">
+                    <CallIcon className="icon_style" />
+                  </a>
                 </div>
               </div>
             </div>
             <div ref={beHappyAnimation} className="beHappyAnime"></div>
             <div className="address_container">
               <div>
-                <img src="./public/Footer/location.png" />
+                <img src="./Footer/location.png" />
               </div>
               <div>
                 <div>
@@ -115,7 +120,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p>
-                    # 54/15, Indra Gandhi Road, Alwarthirunagar, Chennai - 600
+                    # 54/15,Indra Gandhi Road, Alwarthirunagar, Chennai - 600
                     087
                   </p>
                 </div>
