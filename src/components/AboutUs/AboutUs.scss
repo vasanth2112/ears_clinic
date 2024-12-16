@@ -1,107 +1,107 @@
 .aboutus {
-    padding-top: 10px;
+  .aboutus_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
 
-    .aboutus_container {
+    .aboutus_container_flex {
+      gap: 50px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .who_we_are {
+        animation: faderight linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+
+        h2 {
+          text-align: left;
+        }
+
+        h3 {
+          color: #3031309d;
+          font-family: "Bebas Neue", sans-serif;
+          font-weight: 200;
+          font-size: 15px;
+          letter-spacing: 2px;
+          margin-top: 0px;
+        }
+
+        p {
+          color: #01000098;
+          font-family: "Lato", sans-serif;
+          font-size: 18px;
+          word-spacing: 3px;
+          line-height: 28px;
+
+          .highlight {
+            font-weight: 800;
+            font-size: 16px;
+            color: #00a2d3;
+          }
+        }
+      }
+
+      img {
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        height: 350px;
+        width: 100%;
+        animation: fadeleft linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+
+      .video_container {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 30px 0px 30px 50px;
+        background: rgb(0, 162, 211);
+        background: linear-gradient(
+          135deg,
+          rgba(0, 162, 211, 1) 51%,
+          rgba(255, 255, 255, 0) 51%
+        );
 
+        .video {
+          //  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          height: 350px;
+          width: 100%;
+          animation: fadeleft linear;
+          animation-timeline: view();
+          animation-range: entry 0% cover 40%;
 
-        .aboutus_container_flex {
-            gap: 50px;
-            display: flex;
-            flex-wrap: wrap;
-            padding-left: 30px;
-
-            .who_we_are {
-                max-width: 650px;
-                /* Optional: Limit maximum width */
-                min-width: 550px;
-                animation: faderight linear;
-                animation-timeline: view();
-                animation-range: entry 0% cover 40%;
-
-                h2 {
-                    text-align: left;
-                }
-
-                h3 {
-                    color: #3031309d;
-                    font-family: "Bebas Neue", sans-serif;
-                    font-weight: 200;
-                    font-size: 15px;
-                    letter-spacing: 2px;
-                    margin-top: 0px;
-                }
-
-                p {
-                    color: #01000098;
-                    font-family: "Lato", sans-serif;
-                    font-size: 18px;
-                    word-spacing: 3px;
-                    line-height: 28px;
-
-                    .highlight {
-                        font-weight: 800;
-                        font-size: 16px;
-                        color: #00A2D3;
-                    }
-                }
-            }
-
-            img {
-                box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-                height: 350px;
-                width: 100%;
-                animation: fadeleft linear;
-                animation-timeline: view();
-                animation-range: entry 0% cover 60%;
-            }
-
-            .video_container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 30px 0px 30px 50px;
-                background: rgb(0, 162, 211);
-                background: linear-gradient(135deg, rgba(0, 162, 211, 1) 51%, rgba(255, 255, 255, 0) 51%);
-                animation: fadeleft linear;
-                animation-timeline: view();
-                animation-range: entry 0% cover 20%;
-
-                .video {
-                    //  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-                    height: 350px;
-                    width: 100%;
-                    animation: fadeleft linear;
-                    animation-timeline: view();
-                    animation-range: entry 0% cover 40%;
-                }
-            }
+          @media (max-width: 768px) {
+            height: auto;
+          }
         }
+      }
     }
+  }
 }
 
 @keyframes fadeleft {
-    from {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 @keyframes faderight {
-    from {
-        opacity: 0;
-        transform: translateX(100px);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
