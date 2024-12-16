@@ -35,24 +35,32 @@ export default function Footer() {
             <div className='footer_container'>
                 <div className='footer_flex_buttons'>
                     <div>
-                        <Button className="Button_WA" variant="contained" startIcon={<WhatsAppIcon />}>
-                            WhatsApp
-                        </Button>
+                        <a href="https://api.whatsapp.com/send?phone=919047770020">
+                            <Button className="Button_WA" variant="contained" startIcon={<WhatsAppIcon />}>
+                                WhatsApp
+                            </Button>
+                        </a>
                     </div>
                     <div>
-                        <Button className="Button_CU" variant="contained" startIcon={<CallIcon />}>
-                            Call Us
-                        </Button>
+                        <a href="tel:9943601230">
+                            <Button className="Button_CU" variant="contained" startIcon={<CallIcon />}>
+                                Call Us
+                            </Button>
+                        </a>
                     </div>
                     <div>
-                        <Button className="Button_MU" variant="contained" startIcon={<MailIcon />}>
-                            Mail Us
-                        </Button>
+                        <a href="mailto:blisstonehearingclinic@gmail.com?subject=Need%20Your%20Help%20">
+                            <Button className="Button_MU" variant="contained" startIcon={<MailIcon />}>
+                                Mail Us
+                            </Button>
+                        </a>
                     </div>
                     <div>
-                        <Button className="Button_BO" variant="contained" startIcon={<EventAvailableIcon />}>
-                            Book Now
-                        </Button>
+                        <a href='#booknow'>
+                            <Button className="Button_BO" variant="contained" startIcon={<EventAvailableIcon />}>
+                                Book Now
+                            </Button>
+                        </a>
                     </div>
                 </div>
                 <div className='footer_content'>
@@ -70,16 +78,18 @@ export default function Footer() {
                                 <InstagramIcon className='icon_style' />
                             </div>
                             <div>
-                                <CallIcon className='icon_style' />
+                                <a href="tel:9943601230">
+                                    <CallIcon className='icon_style' />
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div ref={beHappyAnimation} className="beHappyAnime"></div>
                     <div className='address_container'>
-                        <div><img src='./public/Footer/location.png'/></div>
+                        <div><img src='./Footer/location.png' /></div>
                         <div>
                             <div><h3>Address</h3></div>
-                            <div><p># 54/15,<br/>Indra Gandhi Road,<br/> Alwarthirunagar,<br/> Chennai - 600 087</p></div>
+                            <div><p># 54/15,<br />Indra Gandhi Road,<br /> Alwarthirunagar,<br /> Chennai - 600 087</p></div>
                         </div>
                     </div>
                 </div>
@@ -87,6 +97,6 @@ export default function Footer() {
                     <p>Copyright © 2024 Bliss Tone - All Rights Reserved.</p>
                 </div>
             </div>
-        </div>
+        </div >
     </>)
 }
