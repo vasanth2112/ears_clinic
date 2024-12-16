@@ -86,7 +86,7 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
-                <div className="header_video">
+                <div id="booknow" className="header_video">
                     <video
                         autoPlay
                         loop
@@ -127,11 +127,11 @@ export default function Header() {
                                     <div>
                                         <TextField
                                             fullWidth
-                                            id="outlined-multiline-static"
-                                            label="Message"
+                                          //  id="outlined-multiline-static"
+                                            label="Phone No"
                                             name="message"
                                             multiline
-                                            rows={6}
+                                          //  rows={6}
                                             value={formData.message}
                                             onChange={handleInputChange}
                                             required
