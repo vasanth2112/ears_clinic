@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 export default function Brand() {
   return (
     <>
-      <div className="brand_container">
+      <div id='brands' className="brand_container">
         <h1>
           <span className="letter_color">T</span>rusted{" "}
           <span className="letter_color">B</span>rands{" "}

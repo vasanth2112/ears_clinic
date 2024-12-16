@@ -65,6 +65,7 @@ $title-width: clamp(100px, 50%, 200px);
         left: 50%;
         z-index: 10;
         position: absolute;
+        mix-blend-mode: color;
         background: #00a2d3;
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;

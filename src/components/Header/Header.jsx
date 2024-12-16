@@ -47,11 +47,11 @@ export default function Header() {
                     <div className="navbar">
                         <div className="nav-bar">
                             <a href="#home">Home</a>
-                            <a href="#aboutUs">About Us</a>
-                            <a href="#ourTeam">Our Team</a>
-                            <a href="#service">Services</a>
+                            <a href="#about">About Us</a>
+                            <a href="#service">Our Services</a>
+                            <a href="#brands">Brands</a>
                             <a href="#gallery">Gallery</a>
-                            <a href="#contact">Contact</a>
+                            <a href="#contact">Contact Us</a>
                         </div>
                     </div>
                 )}

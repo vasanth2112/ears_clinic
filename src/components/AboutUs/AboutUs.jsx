@@ -3,7 +3,7 @@ import '../AboutUs/AboutUs.scss';
 export default function AboutUs() {
 
     return (<>
-        <div id='aboutUs' className='aboutus'>
+        <div id='about' className='aboutus'>
             <h1>
                 <span class="letter_color">A</span>bout
                 <span class="letter_color"> U</span>s</h1>
