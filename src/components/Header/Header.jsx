@@ -6,12 +6,13 @@ import loader from "../../../public/loader.json";
 import Lottie from "lottie-web";
 
 export default function Header() {
-    const [isVideoLoaded, setIsVideoLoaded] = useState(false);
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        message: "",
-    });
+  const [isOpen, setOpen] = useState(false);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -37,7 +38,11 @@ export default function Header() {
             loading.destroy();
         };
     }, []);
-    return (
+  
+  const handleToggle = () => {
+    setOpen(!isOpen);
+  };
+  return (
         <>
             <div className="header">
                 {!isVideoLoaded && (
@@ -53,7 +58,34 @@ export default function Header() {
                             <a href="#gallery">Gallery</a>
                             <a href="#contact">Contact Us</a>
                         </div>
-                    </div>
+          
+            <button
+              onClick={handleToggle}
+              className={`hamburger-button ${isOpen ? "open" : "close"}`}
+            />
+            <div className={`panel ${isOpen ? "open" : "close"}`}>
+              <ul>
+                <li onClick={handleToggle}>
+                  <a href="#home">Home</a>
+                </li>
+                <li onClick={handleToggle}>
+                  <a href="#aboutUs">About Us</a>
+                </li>
+                <li onClick={handleToggle}>
+                  <a href="#ourTeam">Our Team</a>
+                </li>
+                <li onClick={handleToggle}>
+                  <a href="#gallery">Gallery</a>
+                </li>
+                <li onClick={handleToggle}>
+                  <a href="#service">Services</a>
+                </li>
+                <li onClick={handleToggle}>
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
                 )}
                 <div className="header_titles">
                     <div className="header_titles_flex">

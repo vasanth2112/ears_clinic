@@ -14,8 +14,6 @@ export default function Brand() {
           <span className="letter_color">W</span>ith
         </h1>
         <div className="brand">
-          {/* <div className="marquee-container">
-            <div className="marquee"> */}
           <Marquee>
             {BRAND_IMAGES.map((content, index) => (
               <div key={index} className="brand_img">
@@ -23,8 +21,6 @@ export default function Brand() {
               </div>
             ))}
           </Marquee>
-          {/* </div>
-          </div> */}
         </div>
       </div>
     </>

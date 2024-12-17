@@ -6,17 +6,24 @@
     padding: 0 50px;
 
     .aboutus_container_flex {
-      gap: 50px;
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
-
+      align-items: center;
+      gap: 50px;
+      
+      @media (max-width: 1200px) {
+        flex-wrap: wrap;
+      }
+      
       .who_we_are {
+        flex: 1;
         animation: faderight linear;
         animation-timeline: view();
         animation-range: entry 0% cover 40%;
-        width: 600px;
 
+        @media (max-width: 1200px) {
+          flex: unset;
+        }
         h2 {
           text-align: left;
         }
@@ -46,22 +53,25 @@
       }
 
       .video_container {
+        flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px 0px 10px 50px;
+        padding: 30px 0px 30px 50px;
+        background: rgb(0, 162, 211);
+        background: linear-gradient(
+          135deg,
+          rgba(0, 162, 211, 1) 51%,
+          rgba(255, 255, 255, 0) 51%
+        );
+
+        @media (max-width: 1200px) {
+          flex: unset;
+        }
 
         .video {
-          //  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-          //height: 500px;
-          background: rgb(0, 162, 211);
-          background: linear-gradient(
-            135deg,
-            rgba(0, 162, 211, 1) 51%,
-            rgba(255, 255, 255, 0) 51%
-          );
-          padding:50px 0px 50px 50px;
-          width: 600px;
+          height: 350px;
+          width: 100%;
           animation: fadeleft linear;
           animation-timeline: view();
           animation-range: entry 0% cover 40%;
