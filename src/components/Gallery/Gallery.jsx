@@ -51,7 +51,7 @@ export default function Gallery() {
             <div className="image-container">
 
                 <ImageList
-                    className="box_scroll" sx={{ width: '100%', height: 600, padding: '12px', overflowY: 'scroll' }}
+                    className="box_scroll" sx={{ width: '100%', height: 600, overflowY: 'scroll' }}
                     variant="quilted"
                     cols={4}
                     rowHeight={'100%'}

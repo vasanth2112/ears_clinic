@@ -37,6 +37,7 @@
       justify-content: flex-end;
       mix-blend-mode: unset;
     }
+
     .nav-bar {
       display: flex;
       justify-items: right;
@@ -46,6 +47,7 @@
       @media (max-width: 516px) {
         display: none;
       }
+
       a {
         position: relative;
         cursor: pointer;
@@ -131,6 +133,7 @@
         @media (max-width: 710px) {
           width: 100px;
         }
+
         @media (max-width: 400px) {
           width: 70px;
         }
@@ -146,6 +149,7 @@
         @media (max-width: 710px) {
           width: 250px;
         }
+
         @media (max-width: 400px) {
           width: 200px;
         }
@@ -154,6 +158,7 @@
       @keyframes mymove {
         from {
           left: -200px;
+
           @media (max-width: 710px) {
             left: -100px;
           }
@@ -169,11 +174,11 @@
       padding-left: 60px;
       width: 70%;
       animation: opacity 2s 1;
-      
+
       @media (max-width: 1250px) {
         padding: 0;
       }
-      
+
       h2 {
         text-align: left;
       }
@@ -193,10 +198,11 @@
         // @media (max-width: 400px) {
         //   flex-direction: column;
         // }
-        
+
         @media (max-width: 1250px) {
           justify-content: center;
         }
+
         .Button {
           padding: 15px 20px;
           font-size: clamp(0.7rem, 3vw, 1rem);
@@ -206,19 +212,20 @@
             padding: 12px;
           }
         }
-        
+
         .Button:hover {
           color: #00a2d3;
           border-color: #00a2d3;
           background-color: white;
         }
-        
+
         /* Increase the specificity */
         .Button_outline {
           font-size: clamp(0.7rem, 3vw, 1rem);
           padding: 15px 20px;
           color: white;
           border-color: #00a2d3;
+
           @media (max-width: 400px) {
             padding: 12px;
           }
@@ -230,6 +237,7 @@
         }
       }
     }
+
     @keyframes opacity {
       from {
         opacity: 0;
@@ -254,6 +262,7 @@
     @media (max-width: 1250px) {
       position: static;
     }
+
     video {
       object-fit: cover;
       width: 100%;
@@ -272,6 +281,7 @@
       @media (max-width: 1250px) {
         display: none;
       }
+
       .message_header {
         text-align: center;
 
@@ -299,6 +309,7 @@
           flex-direction: column;
           gap: 20px;
         }
+
         .Button {
           background-color: #00a2d3;
         }
@@ -333,10 +344,11 @@
   background-position: center center;
   background-size: contain;
   background-color: transparent;
-  
+
   @media (max-width: 516px) {
     display: block;
   }
+
   &.open {
     position: fixed;
     background-image: url(https://res.cloudinary.com/dnpyq0ocz/image/upload/v1588441892/icon-hamburger-close.svg);
@@ -365,24 +377,25 @@
     right: 0;
     opacity: 1;
   }
-}
 
-ul {
-  margin: auto 0 auto auto;
+  ul {
+    margin: auto 0 auto auto;
 
-  li {
-    list-style: none;
-    font-size: 2em;
-    text-align: right;
-    margin-top: 1em;
+    li {
+      list-style: none;
+      font-size: 2em;
+      text-align: right;
+      margin-top: 1em;
 
-    a {
-      text-decoration: none;
-      color: white;
+      a {
+        text-decoration: none;
+        color: white;
 
-      &:hover {
-        color: #303130;
+        &:hover {
+          color: #303130;
+        }
       }
     }
   }
+
 }
