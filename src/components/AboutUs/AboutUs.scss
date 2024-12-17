@@ -22,7 +22,7 @@
         flex: 1;
         animation: faderight linear;
         animation-timeline: view();
-        animation-range: entry 0% cover 30%;
+        animation-range: entry 0% cover 40%;
 
         @media (max-width: 1200px) {
           flex: unset;
