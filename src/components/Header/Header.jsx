@@ -69,19 +69,19 @@ export default function Header() {
                   <a href="#home">Home</a>
                 </li>
                 <li onClick={handleToggle}>
-                  <a href="#aboutUs">About Us</a>
+                  <a href="#about">About Us</a>
                 </li>
                 <li onClick={handleToggle}>
-                  <a href="#ourTeam">Our Team</a>
+                  <a href="#service">Our Services</a>
+                </li>
+                <li onClick={handleToggle}>
+                  <a href="#brands">Brands</a>
                 </li>
                 <li onClick={handleToggle}>
                   <a href="#gallery">Gallery</a>
                 </li>
                 <li onClick={handleToggle}>
-                  <a href="#service">Services</a>
-                </li>
-                <li onClick={handleToggle}>
-                  <a href="#contact">Contact</a>
+                  <a href="#contact">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -109,7 +109,7 @@ export default function Header() {
                                 </a>
                             </div>
                             <div>
-                                <a href="#aboutUs">
+                                <a href="#about">
                                     <Button className="Button_outline" variant="outlined">
                                         Know More
                                     </Button>
