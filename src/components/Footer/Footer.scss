@@ -12,7 +12,8 @@
     margin-top: 100px;
 
     .contact_us {
-      width: 80%;
+      max-width: 80%;
+      width: fit-content;
       margin-bottom: 40px;
       position: absolute;
       background-color: #ffffff;
