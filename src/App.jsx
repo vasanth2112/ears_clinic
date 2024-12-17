@@ -5,6 +5,7 @@ import Service from './components/Services/Service.jsx'
 import Brand from './components/Brand/Brand.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import Gallery from './components/Gallery/Gallery.jsx'
+import { BookNow } from './components/BookNow/BookNow.jsx'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Service />
       <Brand />
       <Gallery />
+      <BookNow />
       <Footer />
     </>
   )

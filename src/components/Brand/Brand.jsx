@@ -14,7 +14,7 @@ export default function Brand() {
           <span className="letter_color">W</span>ith
         </h1>
         <div className="brand">
-          <Marquee>
+          <Marquee pauseOnHover>
             {BRAND_IMAGES.map((content, index) => (
               <div key={index} className="brand_img">
                 <img src={content.img} alt={`Brand ${index}`} />
