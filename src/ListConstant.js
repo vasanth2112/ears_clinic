@@ -59,6 +59,7 @@ export const GALLERY_IMAGES = [
     {
         img: "../Gallery/image_in.jpg",
         title: 'Image 2',
+        rows:1,
         cols:2  ,
     },
     {
