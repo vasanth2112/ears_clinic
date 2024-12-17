@@ -65,14 +65,14 @@ export const GALLERY_IMAGES = [
     {
         img: "../Gallery/image_waiting.jpg",
         title: 'Image 4',
-        rows:1,
-        cols:1,
+        rows:2,
+        cols:2,
     },
     {
         img: "../Gallery/image_way.jpg",
         title: 'Image 6',
         rows:1,
-        cols:1,
+        cols:2,
     },
     {
         img: "../Gallery/image_office2.jpg",
