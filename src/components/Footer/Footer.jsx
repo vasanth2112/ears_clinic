@@ -96,9 +96,11 @@ export default function Footer() {
                 <div>
                   <FacebookIcon className="icon_style" />
                 </div>
-                <div>
-                  <WhatsAppIcon className="icon_style" />
-                </div>
+                <a href="https://api.whatsapp.com/send?phone=919047770020">
+                  <div>
+                    <WhatsAppIcon className="icon_style" />
+                  </div>
+                </a>
                 <div>
                   <InstagramIcon className="icon_style" />
                 </div>
