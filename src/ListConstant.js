@@ -59,23 +59,20 @@ export const GALLERY_IMAGES = [
     {
         img: "../Gallery/image_in.jpg",
         title: 'Image 2',
-        rows:1,
         cols:2  ,
     },
     {
-        img: "../Gallery/image_waiting.jpg",
+        img: "../Gallery/image_office2.jpg",
         title: 'Image 4',
-        rows:2,
-        cols:2,
+        cols:4,
     },
     {
         img: "../Gallery/image_way.jpg",
         title: 'Image 6',
-        rows:1,
         cols:2,
     },
     {
-        img: "../Gallery/image_office2.jpg",
+        img: "../Gallery/image_waiting.jpg",
         title: 'Image 3',
         cols:2,
     },
