@@ -115,6 +115,10 @@
       justify-content: start;
       align-items: center;
 
+      @media (max-width: 1250px) {
+        padding: 0;
+      }
+
       .hidden {
         overflow: hidden;
       }
@@ -127,6 +131,9 @@
         @media (max-width: 710px) {
           width: 100px;
         }
+        @media (max-width: 400px) {
+          width: 70px;
+        }
       }
 
       .text_img {
@@ -138,6 +145,9 @@
 
         @media (max-width: 710px) {
           width: 250px;
+        }
+        @media (max-width: 400px) {
+          width: 200px;
         }
       }
 
@@ -159,7 +169,11 @@
       padding-left: 60px;
       width: 70%;
       animation: opacity 2s 1;
-
+      
+      @media (max-width: 1250px) {
+        padding: 0;
+      }
+      
       h2 {
         text-align: left;
       }
@@ -169,32 +183,45 @@
         color: #ffffff98;
         font-family: "Lato", sans-serif;
         font-style: italic;
-        font-size: 20px;
+        font-size: clamp(1rem, 4vw, 1.5rem);
         word-spacing: 2px;
       }
 
       .header_titles_flex_buttons {
         display: flex;
         gap: 20px;
+        // @media (max-width: 400px) {
+        //   flex-direction: column;
+        // }
+        
         @media (max-width: 1250px) {
           justify-content: center;
         }
         .Button {
-          height: 50px;
+          padding: 15px 20px;
+          font-size: clamp(0.7rem, 3vw, 1rem);
           background-color: #00a2d3;
-        }
 
+          @media (max-width: 400px) {
+            padding: 12px;
+          }
+        }
+        
         .Button:hover {
           color: #00a2d3;
           border-color: #00a2d3;
           background-color: white;
         }
-
+        
         /* Increase the specificity */
         .Button_outline {
-          height: 50px;
+          font-size: clamp(0.7rem, 3vw, 1rem);
+          padding: 15px 20px;
           color: white;
           border-color: #00a2d3;
+          @media (max-width: 400px) {
+            padding: 12px;
+          }
         }
 
         .Button_outline:hover {
@@ -291,6 +318,7 @@
 }
 
 .hamburger-button {
+  font-family: "Bebas Neue", sans-serif;
   margin: 0 20px;
   display: none;
   outline: none;
@@ -310,6 +338,7 @@
     display: block;
   }
   &.open {
+    position: fixed;
     background-image: url(https://res.cloudinary.com/dnpyq0ocz/image/upload/v1588441892/icon-hamburger-close.svg);
   }
 }
@@ -345,10 +374,7 @@ ul {
     list-style: none;
     font-size: 2em;
     text-align: right;
-
-    & + li {
-      margin-top: 1em;
-    }
+    margin-top: 1em;
 
     a {
       text-decoration: none;

@@ -5,16 +5,19 @@
     align-items: center;
     padding: 0 50px;
 
+    @media (max-width: 400px) {
+      padding: 0 20px;
+    }
     .aboutus_container_flex {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 50px;
-      
+
       @media (max-width: 1200px) {
         flex-wrap: wrap;
       }
-      
+
       .who_we_are {
         flex: 1;
         animation: faderight linear;
@@ -24,29 +27,41 @@
         @media (max-width: 1200px) {
           flex: unset;
         }
+
         h2 {
           text-align: left;
+
+          @media (max-width: 1200px) {
+            text-align: center;
+          }
         }
 
         h3 {
           color: #3031309d;
           font-family: "Bebas Neue", sans-serif;
           font-weight: 200;
-          font-size: 15px;
+          font-size: clamp(0.8rem, 2.5vw, 1rem);
           letter-spacing: 2px;
           margin-top: 0px;
+          @media (max-width: 1200px) {
+            text-align: center;
+          }
         }
 
         p {
+          font-size: clamp(0.9rem, 3vw, 1.1rem);
           color: #01000098;
           font-family: "Lato", sans-serif;
-          font-size: 18px;
           word-spacing: 3px;
           line-height: 28px;
 
+          @media (max-width: 1200px) {
+            text-align: justify;
+          }
+
           .highlight {
             font-weight: 800;
-            font-size: 16px;
+            font-size: clamp(0.9rem, 3vw, 1.1rem);
             color: #00a2d3;
           }
         }
@@ -59,11 +74,9 @@
         align-items: center;
         padding: 30px 0px 30px 50px;
         background: rgb(0, 162, 211);
-        background: linear-gradient(
-          135deg,
-          rgba(0, 162, 211, 1) 51%,
-          rgba(255, 255, 255, 0) 51%
-        );
+        background: linear-gradient(135deg,
+            rgba(0, 162, 211, 1) 51%,
+            rgba(255, 255, 255, 0) 51%);
 
         @media (max-width: 1200px) {
           flex: unset;
