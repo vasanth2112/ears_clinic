@@ -25,7 +25,7 @@
       z-index: 10;
       animation: fadebottom linear;
       animation-timeline: view();
-      animation-range: entry 0% cover 50%;
+      animation-range: entry 0% cover 25%;
 
       @media (max-width: 576px) {
         padding: 20px;
@@ -90,7 +90,7 @@
         gap: 10px;
         animation: fadeleft linear;
         animation-timeline: view();
-        animation-range: entry 0% cover 30%;
+        animation-range: entry 0% cover 25%;
 
         img {
           height: 100px;
