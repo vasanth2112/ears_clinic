@@ -65,12 +65,6 @@
                         object-fit: cover;
                         /* Crop the image to fit the area */
                     }
-
-                    .service_btn_outline{
-                        border-color: #00a2d3;
-                        color: #00a2d3;
-                        
-                    }
                 }
 
                 @keyframes top {
@@ -97,6 +91,17 @@
                     font-family: "Lato", sans-serif;
                     font-weight: 400;
                     word-spacing: 2px;
+                }
+
+                .Button {
+                    background-color: #00A2D3;
+                    /* Change to your preferred color */
+                }
+
+                .Button:hover {
+                    background-color: transparent;
+                    color: #00A2D3;
+                    border: solid 1px #00A2D3;
                 }
             }
 

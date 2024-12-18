@@ -21,7 +21,7 @@ export default function Service() {
                                 <h3>{content.title}</h3>
                                 <p>{content.description}</p>
                                 <a href="https://api.whatsapp.com/send?phone=919047770020">
-                                    <Button className="service_btn_outline" variant="outlined" endIcon={<ArrowForwardIcon  />} >
+                                    <Button className="Button" variant="contained" endIcon={<ArrowForwardIcon  />} >
                                         Know More
                                     </Button>
                                 </a>
