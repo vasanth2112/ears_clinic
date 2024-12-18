@@ -9,13 +9,22 @@
     .gallery-container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         /* Center vertically */
-        width: 90%;
+        border-radius: 10px;
+        padding: 30px;
+        background-color: white;
+        width: 80%;
         margin-top: 0px;
         /* Center the gallery horizontally */
         animation: fadebottom linear;
         animation-timeline: view();
         animation-range: entry 0% cover 40%;
+
+        @media (max-width: 400px) {
+            padding: 0px 8px 0px 8px;
+          }
     }
 }
 
@@ -37,26 +46,23 @@
 .hoverable img {
     cursor: pointer;
     border-radius: 5px;
-    transition: transform 3s ease;
-    animation: fadeZoom linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
+    // transition: transform 3s ease;
+    // animation: fadeZoom linear;
+    // animation-timeline: view();
+    // animation-range: entry 0% cover 30%;
 }
 
 @keyframes fadeZoom {
     from {
         opacity: 0;
-        scale: 0;
     }
 
     to {
         opacity: 1;
-        scale: 1;
     }
 }
 
 .hoverable img:hover {
-    transform: scale(1.01);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 

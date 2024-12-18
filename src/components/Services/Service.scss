@@ -65,6 +65,12 @@
                         object-fit: cover;
                         /* Crop the image to fit the area */
                     }
+
+                    .service_btn_outline{
+                        border-color: #00a2d3;
+                        color: #00a2d3;
+                        
+                    }
                 }
 
                 @keyframes top {
@@ -85,7 +91,7 @@
                 }
 
                 p {
-                    margin-top: 0px;
+                    margin: 0px;
                     padding: 20px;
                     color: #303130c2;
                     font-family: "Lato", sans-serif;

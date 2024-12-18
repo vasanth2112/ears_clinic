@@ -1,3 +1,88 @@
+body {
+  background-color: whitesmoke;
+}
+
 body.noscroll {
-    overflow: hidden;
+  overflow: hidden;
+}
+
+.scroll-to-top {
+  position: fixed;
+  /* opacity: 0.7; */
+  bottom: 40px;
+  right: 30px;
+  width: 50px;
+  z-index: 99;
+  /* background-color: white; */
+  /* border-radius: 10px; */
+  /* padding: 10px; */
+  /* box-shadow: rgba(0, 75, 173, 0.322) 0px 3px 8px; */
+  /* box-shadow: 1px 1px 6px 2px #00a2d3; */
+  /* transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; */
+}
+
+/* Mobile devices (max width 480px) */
+@media (max-width: 480px) {
+  .scroll-to-top {
+    bottom: 50px;
+    right: 5px;
+    /* Smaller size for mobile */
   }
+}
+
+/* Tablet devices (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .scroll-to-top {
+    bottom: 50px;
+    right: 15px;
+    /* Medium size for tablet */
+  }
+}
+
+/* Larger tablets (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .scroll-to-top {
+    bottom: 50px;
+    right: 25px;
+    /* Slightly larger size for larger tablets */
+  }
+}
+
+/* Larger screens (above 1024px) */
+@media (min-width: 1025px) {
+  .scroll-to-top {
+    bottom: 50px;
+    right: 30px;
+    /* Default size for desktop and larger devices */
+  }
+}
+
+.arrow_flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.buttons{
+  cursor: pointer;
+  opacity: 0.7;
+  width: 50px;
+  z-index: 10000;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 1px 1px 6px 2px #00a2d3;
+  
+  @media (max-width: 516px) {
+    padding: 5px;
+  }
+}
+.buttons:hover {
+  /* transform: scale(1.1); */
+  /* Scale the image slightly on hover */
+  opacity: 1;
+}
+
+
