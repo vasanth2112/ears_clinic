@@ -74,7 +74,7 @@ function App() {
             <WhatsAppIcon className='buttons'
               style={{
                 color: '#25D366',
-                fontSize: '5vw',  // Responsive size based on viewport width
+                fontSize: '6vw',  // Responsive size based on viewport width
                 maxWidth: '35px', // Optional: Limit maximum size
                 maxHeight: '35px', // Optional: Limit maximum height
               }}
