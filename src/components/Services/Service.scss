@@ -9,6 +9,10 @@
         animation: fadebottom linear;
         animation-timeline: view();
         animation-range: entry 0% cover 25%;
+
+        @media (max-width: 400px) {
+            width: 300px;
+          }
       }
 
     .aboutus_container_commitment_flex {
