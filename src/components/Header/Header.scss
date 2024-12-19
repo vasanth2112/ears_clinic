@@ -4,6 +4,7 @@
   display: flex;
   height: 100vh;
   width: 100%;
+  box-shadow: 1px 1px 6px 2px #00a2d3c2;
 
   @media (max-width: 1250px) {
     display: block;
@@ -302,6 +303,7 @@
         background-color: rgba(255, 255, 255, 0.753);
         border-radius: 12px;
         border: 1px solid rgba(209, 213, 219, 0.784);
+        box-shadow: 1px 1px 6px 2px #00a2d3;
 
         .textfield_div {
           padding: 30px;

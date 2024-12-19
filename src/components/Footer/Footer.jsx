@@ -124,6 +124,9 @@ export default function Footer() {
                   <p>
                     # 54/15,Indra Gandhi Road, Alwarthirunagar, Chennai - 600
                     087
+                    <br/>
+                    Contact no : 9943601230 / 9047770020 / 9047770050 <br/>
+                    Email id : blisstonehearingclinic@gmail.com 
                   </p>
                 </div>
               </div>

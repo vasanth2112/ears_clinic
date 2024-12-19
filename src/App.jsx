@@ -75,8 +75,8 @@ function App() {
               style={{
                 color: '#25D366',
                 fontSize: '6vw',  // Responsive size based on viewport width
-                maxWidth: '35px', // Optional: Limit maximum size
-                maxHeight: '35px', // Optional: Limit maximum height
+                maxWidth: '30px', // Optional: Limit maximum size
+                maxHeight: '30px', // Optional: Limit maximum height
               }}
             />
             </a>
@@ -84,8 +84,8 @@ function App() {
               style={{
                 color: '#E4405F',
                 fontSize: '6vw',  // Responsive size based on viewport width
-                maxWidth: '35px', // Optional: Limit maximum size
-                maxHeight: '35px', // Optional: Limit maximum height
+                maxWidth: '30px', // Optional: Limit maximum size
+                maxHeight: '30px', // Optional: Limit maximum height
               }}
             />
             <Tooltip title="Back to Top" placement="top">
@@ -94,8 +94,8 @@ function App() {
                 className='buttons'
                 style={{
                   fontSize: '6vw',  // Responsive size based on viewport width
-                  maxWidth: '35px', // Optional: Limit maximum size
-                  maxHeight: '35px', // Optional: Limit maximum height
+                  maxWidth: '30px', // Optional: Limit maximum size
+                  maxHeight: '30px', // Optional: Limit maximum height
                 }}
               />
             </Tooltip>

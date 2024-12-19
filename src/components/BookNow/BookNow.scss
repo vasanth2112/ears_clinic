@@ -4,20 +4,40 @@
   align-items: center;
   flex-direction: column;
   margin-top: 80px;
+
   .bookNow-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 40px 10px 40px 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
     width: 90%;
+    background-color: #4a4a4a;
+    box-shadow: 1px 1px 6px 2px #00a2d3;
     margin-top: 0px;
     /* Center the gallery horizontally */
     animation: fadebottom linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 
+
+    .bookNowAnime {
+      width: 400px;
+      animation: fadeleft linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 25%;
+    }
+
     .form {
+      display: flex;
+      align-items: center;
       width: 400px;
       position: relative;
-      animation: opacity 2s 1;
+      min-width: 300px;
+      animation: faderight linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 25%;
+
 
       .message_header {
         text-align: center;
@@ -36,15 +56,20 @@
         // background-color: #303130;
         backdrop-filter: blur(7px) saturate(152%);
         -webkit-backdrop-filter: blur(7px) saturate(152%);
-        background-color: rgba(255, 255, 255, 0.753);
+        background-color: rgba(255, 255, 255, 0.842);
         border-radius: 12px;
         border: 1px solid rgba(209, 213, 219, 0.784);
-        box-shadow: 1px 1px 6px 2px #00a2d3;
+
+        @media (max-width: 330px) {
+          width: 95%;
+        }
+
 
         form {
           display: flex;
           justify-content: center;
         }
+
         .textfield_div {
           width: 100%;
           padding: 30px;
@@ -63,5 +88,29 @@
         }
       }
     }
+  }
+}
+
+@keyframes fadeleft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes faderight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
