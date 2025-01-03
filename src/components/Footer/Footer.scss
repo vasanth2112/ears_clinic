@@ -150,6 +150,15 @@
           font-size: 15px;
           line-height: 25px;
         }
+        a{
+          color: #ffffff98;
+          font-family: "Lato", sans-serif;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        a:hover{
+          color: #00a2d3;
+        }
 
         @media (max-width: 900px) {
           animation: fadeleft linear;
