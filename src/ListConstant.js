@@ -35,6 +35,24 @@ export const SERVICES = [
     description:
       "Stay powered with our selection of reliable and long-lasting hearing aid batteries. Convenience and quality, always available.",
   },
+  {
+    image: "./AboutUs/batteries.jpg",
+    title: "Hearing Aid Batteries",
+    description:
+      "Stay powered with our selection of reliable and long-lasting hearing aid batteries. Convenience and quality, always available.",
+  },
+  {
+    image: "./AboutUs/batteries.jpg",
+    title: "Hearing Aid Batteries",
+    description:
+      "Stay powered with our selection of reliable and long-lasting hearing aid batteries. Convenience and quality, always available.",
+  },
+  {
+    image: "./AboutUs/batteries.jpg",
+    title: "Hearing Aid Batteries",
+    description:
+      "Stay powered with our selection of reliable and long-lasting hearing aid batteries. Convenience and quality, always available.",
+  },
 ];
 
 export const BRAND_IMAGES = [
