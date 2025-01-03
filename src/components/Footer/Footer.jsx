@@ -114,7 +114,9 @@ export default function Footer() {
             <div ref={beHappyAnimation} className="beHappyAnime"></div>
             <div className="address_container">
               <div>
-                <img src="./Footer/location.png" />
+                <a href="https://www.google.com/maps/place/Bliss+Tone+Speech+%26+Hearing+Clinic/@13.0505265,80.182396,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5261e11df82c6b:0x946f93205d08cea4!8m2!3d13.0505265!4d80.1849709!16s%2Fg%2F11lp4jsybg?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                  <img src="./Footer/location.png" />
+                </a>
               </div>
               <div>
                 <div>
@@ -124,9 +126,9 @@ export default function Footer() {
                   <p>
                     # 54/15,Indra Gandhi Road, Alwarthirunagar, Chennai - 600
                     087
-                    <br/>
-                    Contact no : 9943601230 / 9047770020 / 9047770050 <br/>
-                    Email id : blisstonehearingclinic@gmail.com 
+                    <br />
+                    Contact no : 9943601230 / 9047770020 / 9047770050 <br />
+                    Email id : blisstonehearingclinic@gmail.com
                   </p>
                 </div>
               </div>
