@@ -23,7 +23,7 @@ export default function AboutUs() {
                 At{" "}
                 <span className="highlight">
                   {" "}
-                  BLISS TONE Hearing and Speech Clinic
+                  BLISS TONE Speech and Hearing Clinic
                 </span>
                 , we are dedicated to helping individuals overcome hearing and
                 speech challenges. With a commitment to personalized care,
