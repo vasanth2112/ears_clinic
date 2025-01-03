@@ -11,6 +11,7 @@ import Tooltip from '@mui/material/Tooltip';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import YoutubeVideo from './components/Youtube/youtube.jsx'
 
 function App() {
 
@@ -61,6 +62,7 @@ function App() {
       <Service />
       <Brand />
       <Gallery />
+      <YoutubeVideo />
       <BookNow />
       <Footer />
 

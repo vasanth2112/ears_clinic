@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 export default function Brand() {
   return (
     <>
-      <div id='brands' className="brand_container">
+      <div id="brands" className="brand_container">
         <h1>
           <span className="letter_color">T</span>rusted{" "}
           <span className="letter_color">B</span>rands{" "}
@@ -17,7 +17,12 @@ export default function Brand() {
           <Marquee pauseOnHover>
             {BRAND_IMAGES.map((content, index) => (
               <div key={index} className="brand_img">
-                <img src={content.img} alt={`Brand ${index}`} />
+                <div className="brand-image">
+                  <img src={content.img} alt={`Brand ${index}`} />
+                </div>
+                <div className="brand-logo">
+                  <img src={content.logo} alt={`Brand ${index}`} />
+                </div>
               </div>
             ))}
           </Marquee>

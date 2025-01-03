@@ -18,7 +18,7 @@ export const BookForm = () => {
       <div className="form">
         <div className="form_container">
           <div className="message_header">
-            <p>Book Oppointment</p>
+            <p>Book Appointment</p>
           </div>
           <form>
             <div className="textfield_div">
