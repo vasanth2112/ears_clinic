@@ -12,6 +12,7 @@ import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YoutubeVideo from './components/Youtube/Youtube.jsx'
+import Review from './components/Review/Review.jsx'
 
 function App() {
 
@@ -62,8 +63,9 @@ function App() {
       <Service />
       <Brand />
       <Gallery />
-      <YoutubeVideo />
+      <Review />
       <BookNow />
+      <YoutubeVideo />
       <Footer />
 
       {/* Scroll to Top Button */}

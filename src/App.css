@@ -85,4 +85,7 @@ body.noscroll {
   opacity: 1;
 }
 
+.rfm-initial-child-container {
+  height: 400px; /* Updated height */
+}
 
