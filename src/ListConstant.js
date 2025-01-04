@@ -109,26 +109,26 @@ export const GALLERY_IMAGES = [
 export const REVIEWS = [
   {
     image: "../Review/google.png",
-    title: "Hearing Aid Trial",
+    title: "Sarah M",
     description:
-      "Discover the perfect hearing aid through our trial program. Experience cutting-edge technology and choose what best suits your lifestyle and hearing needs.",
+      `"Bliss Tone truly changed my life! The team was so professional and understanding during my hearing test. The hearing aids they recommended have made a world of difference in my daily life. Highly recommend their services!"`,
   },
   {
     image: "../Review/google.png",
-    title: "Hearing Assessment",
+    title: "Varsha",
     description:
-      "Our comprehensive hearing evaluations utilize state-of-the-art tools to assess your hearing accurately. We deliver reliable insights to guide your journey toward better hearing.",
+      `"I was struggling with tinnitus for years, but Bliss Tone’s therapy sessions helped me manage it effectively. The personalized treatment plan really helped reduce the ringing, and now I can live more comfortably. Thank you, Bliss Tone!"`,
   },
   {
     image: "../Review/google.png",
-    title: "Hearing Aid Dispensing",
+    title: "Raj Kumar",
     description:
-      "Choose from a wide range of premium hearing aids. Our specialists ensure you find the ideal fit, offering both functionality and comfort for your everyday life.",
+      `"The staff at Bliss Tone are amazing! From the initial hearing test to the fitting of my hearing aids, the process was seamless. They took the time to ensure everything was perfect, and I’m so happy with my results. Best service ever!"`,
   },
   {
     image: "../Review/google.png",
-    title: "Speech Assessment & Therapy",
+    title: "David",
     description:
-      "Boost communication skills with expert speech therapy. We provide tailored programs for children and adults, addressing speech, language, and communication challenges effectively.",
+      `"I’ve been using hearing aids for years, but after visiting Bliss Tone, my experience has improved drastically. Their fine-tuning support and expert advice made all the difference. I can finally hear clearly again, and their customer service is top-notch!"`,
   },
 ];

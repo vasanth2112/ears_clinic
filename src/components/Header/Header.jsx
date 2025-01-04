@@ -99,7 +99,7 @@ export default function Header() {
           </div>
           <div className="header_titles_btn">
             <div>
-              <p>{`"Rediscover the joy of sound and speech. At Bliss Tone, we bring clarity to your communication. Experience expert care tailored to your unique needs."`}</p>
+              <p>{`"Rediscover the joy of sound and speech. At Bliss Tone, we bring clarity to your communication. Experience expert care customized to your unique needs."`}</p>
             </div>
             <div className="header_titles_flex_buttons">
               <div>

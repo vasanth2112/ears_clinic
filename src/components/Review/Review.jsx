@@ -20,7 +20,7 @@ export default function Review() {
                                 <img src={content.image}></img>
                             </div>
                             <h3>{content.title}</h3>
-                            <p>{content.description}</p>
+                            <p>"{content.description}"</p>
                             <div src="star_style">
                                 <img src="../Review/star.png" />
                                 <img src="../Review/star.png" />
