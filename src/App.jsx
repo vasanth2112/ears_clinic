@@ -56,7 +56,7 @@ function App() {
   return (
     <>
       {/* Add ref to HeaderContainer */}
-     // <div ref={headerRef}>
+     {/* <div ref={headerRef}>
     //    <Header />
     //  </div>
     //  <AboutUs />
@@ -66,7 +66,7 @@ function App() {
      // <Review />
     //  <BookNow />
      // <YoutubeVideo />
-    //  <Footer />
+    //  <Footer /> */}
 
       {/* Scroll to Top Button */}
       {showButton && (
