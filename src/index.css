@@ -1,8 +1,6 @@
 body {
   margin: 0px;
-  box-sizing: border-box;/* Apply this style to the body or html element */
-  background-color: white; /* Full opacity white background */
-  color: black; /* Ensures text is readable against the white background */
+  box-sizing:0px
 }
 
 h1 {
